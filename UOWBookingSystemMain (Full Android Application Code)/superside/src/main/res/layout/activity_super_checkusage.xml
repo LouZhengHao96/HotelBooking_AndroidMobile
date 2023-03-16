@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".superCheckusage">
+    <!--    tools:ignore="MissingDefaultResource">-->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="Check Usage"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="350dp"
+        android:background="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="@+id/toolBar1"
+        app:layout_constraintEnd_toEndOf="@+id/toolBar1"
+        app:layout_constraintStart_toStartOf="@+id/toolBar1"
+        app:layout_constraintTop_toTopOf="@+id/toolBar1" />
+
+
+    <TextView
+        android:id="@+id/SelectRoomTxt"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:text="Select Room"
+        android:textAlignment="textStart"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBar1" />
+
+    <TextView
+        android:id="@+id/HASH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="#"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SelectRoomTxt" />
+
+    <TextView
+        android:id="@+id/Dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/RoomSelection"
+
+        app:layout_constraintStart_toEndOf="@+id/FloorSelection"
+        app:layout_constraintTop_toBottomOf="@+id/SelectRoomTxt" />
+
+    <Spinner
+        android:id="@+id/RoomSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/FloorSelection"
+        app:layout_constraintTop_toBottomOf="@+id/SelectRoomTxt" />
+
+    <Spinner
+        android:id="@+id/FloorSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SelectRoomTxt" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="Select Dates"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FloorSelection" />
+
+    <Button
+        android:id="@+id/Datebutton"
+        android:layout_width="275dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="SELECT DATE RANGE HERE"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/selectedDate"
+        android:layout_width="339dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:textAlignment="textStart"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Datebutton" />
+
+    <Button
+        android:id="@+id/checkUsagebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Usage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedDate" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

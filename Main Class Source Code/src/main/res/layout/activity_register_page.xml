@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="301dp"
+        android:layout_height="245dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="482dp"
+        app:srcCompat="@drawable/uowlogo" />
+
+    <EditText
+        android:id="@+id/usernameR"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/passwordR"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="33dp"
+        android:hint="Username"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/passwordR"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="264dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="452dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="UOW Room Booking System"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/Register_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="173dp"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/showHideTextR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="241dp"
+        android:text="Show Password" />
+
+
+</RelativeLayout>

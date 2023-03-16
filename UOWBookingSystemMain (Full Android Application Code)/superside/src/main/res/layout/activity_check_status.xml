@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".checkStatus">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="Room Status"
+        android:textColor="@color/grey"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="@+id/toolBar1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolBar1" />
+
+    <TextView
+        android:id="@+id/SelectRoomTxt"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Select Room"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBar1" />
+
+
+    <TextView
+        android:id="@+id/HASH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:text="#"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/FloorNoSelection"
+        app:layout_constraintTop_toBottomOf="@+id/SelectRoomTxt" />
+
+    <TextView
+        android:id="@+id/Dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="-"
+
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/FloorNoSelection"
+        app:layout_constraintStart_toEndOf="@+id/FloorNoSelection"
+        app:layout_constraintTop_toTopOf="@+id/FloorNoSelection" />
+
+    <Spinner
+        android:id="@+id/RoomNoSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/Dash"
+        app:layout_constraintTop_toBottomOf="@+id/SelectRoomTxt" />
+
+    <Spinner
+        android:id="@+id/FloorNoSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/SelectRoomTxt"
+        app:layout_constraintTop_toBottomOf="@+id/SelectRoomTxt" />
+
+
+    <Button
+        android:id="@+id/SelectTRoom"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="112dp"
+        android:text="Select this room"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RoomNoSelection" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

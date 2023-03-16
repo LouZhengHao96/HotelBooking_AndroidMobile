@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".approveroomedit">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="49dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activityTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Room Details"
+                android:textSize="40dp" />
+
+
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="50dp"
+                android:text="Date"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/AEdate"
+                android:layout_width="274dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/FloorSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="50dp"
+                android:text="Floor Number"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/AEFloor"
+                android:layout_width="274dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/Roomsubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="50dp"
+                android:text=" Room Number"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/AERoom"
+                android:layout_width="274dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp" />
+
+
+            <TextView
+                android:id="@+id/subTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="50dp"
+                android:text="Timing"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/AETime"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp" />
+
+
+            <TextView
+                android:id="@+id/Capacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="50dp"
+                android:text="Capacity"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/AECapacity"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp" />
+
+
+            <TextView
+                android:id="@+id/subTitle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="50dp"
+                android:text="Price"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/AEPrice"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="numberSigned" />
+
+            <TextView
+                android:id="@+id/subTitle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="50dp"
+                android:text="Promo Code"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/AEPromoCode"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/StatusSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="50dp"
+                android:text="Status"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/AEStatus"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/ApproveBtn"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/mainBlue"
+                android:text="Approve" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

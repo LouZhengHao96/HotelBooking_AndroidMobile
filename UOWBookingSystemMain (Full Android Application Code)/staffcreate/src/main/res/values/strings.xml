@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Staff create room</string>
+    <string name="dateText">Date</string>
+    <string name="durationText">Duration</string>
+    <string name="floorText">Floor</string>
+    <string name="roomText">Room</string>
+    <string name="capacityText">Capacity</string>
+    <string name="priceText">Price</string>
+    <string name="promocodetext">PromoCode</string>
+
+    <string-array name="DurationArray">
+        <item>0900hrs - 1200hrs</item>
+        <item>1200hrs - 1500hrs</item>
+        <item>1500hrs - 1800hrs</item>
+        <item>1800hrs - 2100hrs</item>
+    </string-array>
+    <string-array name="FloorArray">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+    </string-array>
+    <string-array name="RoomArray">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>005</item>
+        <item>006</item>
+        <item>007</item>
+    </string-array>
+    <string-array name="CapacityArray">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+</resources>

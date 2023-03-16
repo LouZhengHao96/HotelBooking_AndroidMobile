@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="@color/white"
+    tools:context=".superMain">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSuperMain"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="12dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <ImageButton
+        android:id="@+id/LogoutbtnMain"
+        android:layout_width="45dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/logout"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarSuperMain"
+        app:layout_constraintEnd_toEndOf="@+id/toolbarSuperMain"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/source_code_pro"
+        android:text="Welcome,\nSuper User"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#808080"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <Button
+        android:id="@+id/roomApprove"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:background="@color/mainBlue"
+        android:fontFamily="@font/source_code_pro"
+        android:lineSpacingExtra="8sp"
+        android:text="Approve Room"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSuperMain" />
+
+    <Button
+        android:id="@+id/roomStatus"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:background="@color/mainBlue"
+        android:fontFamily="@font/source_code_pro"
+        android:lineSpacingExtra="8sp"
+        android:text="CHECK ROOM STATUS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roomApprove" />
+
+    <Button
+        android:id="@+id/toManageButton"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/mainBlue"
+        android:fontFamily="@font/source_code_pro"
+        android:text="CHECK ROOM USAGE"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roomStatus" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

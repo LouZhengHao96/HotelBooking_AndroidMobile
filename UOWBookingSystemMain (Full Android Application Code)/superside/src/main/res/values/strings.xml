@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">UOWRoomBooking</string>
+    <string name="dateLink"><u>Monday, 26 April</u></string>
+    <string name="backBooking">&lt; <u>Back to Manage Bookings</u></string>
+    <string name="backSlot">&lt;  <u>Back to Previous Page</u></string>
+    <string name="approveRoom">You have selected the following date &amp; time-slot. Please proceed to finalize the approval for the room.</string>
+    <string-array name="floorArray">
+        <item>Floor</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+    </string-array>
+    <string-array name="DurationArray">
+        <item>0900hrs - 1200hrs</item>
+        <item>1200hrs - 1500hrs</item>
+        <item>1500hrs - 1800hrs</item>
+        <item>1800hrs - 2100hrs</item>
+    </string-array>
+    <string-array name="roomArray">
+        <item>Room</item>
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>005</item>
+        <item>006</item>
+        <item>007</item>
+    </string-array>
+    <string-array name="timeArray">
+        <item>Time</item>
+        <item>9am - 12pm</item>
+        <item>12pm - 3pm</item>
+        <item>3pm - 6pm</item>
+        <item>6pm - 9pm</item>
+    </string-array>
+    <string-array name="floorRoomArray">
+        <item>#01-05</item>
+        <item>#02-17</item>
+        <item>#01-17</item>
+    </string-array>
+    <string name="title_activity_check_info">checkInfo</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_room_status">roomStatus</string>
+    <string name="title_activity_approveroomedit">approveroomedit</string>
+</resources>

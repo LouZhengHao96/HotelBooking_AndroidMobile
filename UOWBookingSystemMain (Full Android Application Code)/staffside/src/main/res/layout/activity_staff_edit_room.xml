@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StaffEditRoom">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-216dp">
+
+        <LinearLayout
+            android:id="@+id/editLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activityTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Room Details"
+                android:textSize="40dp" />
+
+
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="50dp"
+                android:text="Date"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/DateButton"
+                android:layout_width="274dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:text="Selected date" />
+
+            <TextView
+                android:id="@+id/FloorSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="50dp"
+                android:text="Floor Number"
+                android:textSize="25dp" />
+
+            <Spinner
+                android:id="@+id/FloorNumberSpinner"
+                android:layout_width="274dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/Roomsubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="50dp"
+                android:text=" Room Number"
+                android:textSize="25dp" />
+
+            <Spinner
+                android:id="@+id/RoomNumberSpinner"
+                android:layout_width="274dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp" />
+
+
+            <TextView
+                android:id="@+id/subTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="50dp"
+                android:text="Timing"
+                android:textSize="25dp" />
+
+            <Spinner
+                android:id="@+id/timingSpinner"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp" />
+
+
+            <TextView
+                android:id="@+id/Capacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="50dp"
+                android:text="Capacity"
+                android:textSize="25dp" />
+
+            <Spinner
+                android:id="@+id/CapacitySpinner"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp" />
+
+
+            <TextView
+                android:id="@+id/subTitle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="50dp"
+                android:text="Price"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/editTextPrice"
+                android:layout_width="274dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="numberSigned" />
+
+            <TextView
+                android:id="@+id/subTitle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="50dp"
+                android:text="Promo Code"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/editTextPromoCode"
+                android:layout_width="274dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="SevenGuys7" />
+
+            <Button
+                android:id="@+id/updateBtn"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/mainBlue"
+                android:text="Update" />
+
+            <Button
+                android:id="@+id/launchBtn"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#40B82D"
+                android:text="Launch!" />
+
+            <Button
+                android:id="@+id/deleteBtn"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#FF2A2A"
+                android:text="Delete" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+include ':studentside'
+include ':app'
+rootProject.name = "testdb"
+include ':databasehelper'
+include ':staffside'
+include ':superside'

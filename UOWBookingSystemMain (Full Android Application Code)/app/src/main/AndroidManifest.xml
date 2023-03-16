@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.testdb">
+
+    <application tools:replace="android:theme"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UOWRoomBooking">
+        <activity android:name=".RegisterPage" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.UOWRoomBooking.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StaffEditRoom" />
+        <activity
+            android:name=".StaffLaunchRoom"
+            android:parentActivityName=".StaffMainMenu"
+            android:noHistory="true"/>
+        <activity
+            android:name=".StaffMainMenu"
+            android:launchMode="singleTop">
+        </activity>
+        <activity android:name=".StaffCreateRoom"
+            android:noHistory="true"/>
+        <activity
+            android:name=".StudentCheckPayment"
+            android:noHistory="true" />
+        <activity android:name=".StudentCheckRoomActivity"
+            android:noHistory="true" />
+        <activity android:name=".StudentTimeActivity"
+            android:noHistory="true"/>
+        <activity android:name=".StudentManageActivity"
+            android:noHistory="true"/>
+        <activity android:name=".StudentBookingActivity"
+            android:noHistory="true"/>
+        <activity android:name=".StudentChangeBookingActivity"
+            android:noHistory="true"/>
+        <activity android:name=".StudentActivity"
+            android:launchMode="singleTop">
+        </activity>
+        <activity android:name=".approveroomedit"
+            android:noHistory="true"/>
+        <activity android:name=".approveRoomMain"
+            android:noHistory="true"/>
+        <activity android:name=".checkStatus" />
+        <activity
+            android:name=".checkInfo"
+            android:label="@string/title_activity_check_info"
+            android:noHistory="true"
+            android:theme="@style/Theme.SuperMain.NoActionBar" />
+        <activity android:name=".CheckstatusAll"
+            android:noHistory="true"/>
+        <activity android:name=".superCheckusage"
+            android:noHistory="true"/>
+        <activity android:name=".superMain"
+            android:launchMode="singleTop">
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

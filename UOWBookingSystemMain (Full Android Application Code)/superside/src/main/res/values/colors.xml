@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green">#05E30E</color>
+    <color name="grey">#838080</color>
+    <color name="red">#FFEC0505</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="mainBlue">#001641</color>
+    <color name="mainRed">#dd254a</color>
+    <color name="mainYellow">#f29113</color>
+    <color name="mainGreen">#4b5320</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="dividerColor">#e0e0e0</color>
+    <color name="custom_header_text">#030303</color>
+
+    <color name="calendar_selected_day_bg">#ffcf40</color>
+    <color name="calendar_selected_range_bg">#ffcf40</color>
+    <color name="dateTimeRangePickerStateToday">#ffcf40</color>
+</resources>
